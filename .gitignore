@@ -1,0 +1,48 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Raw Home Credit dataset
+# =========================
+data/raw/home-credit-default-risk/
+
+# =========================
+# Large processed datasets
+# =========================
+data/processed/final_feature_dataset.csv
+data/processed/X_train.csv
+data/processed/X_test.csv
+
+# =========================
+# Large model artifact
+# =========================
+models/xgboost_final.joblib
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Large generated dataset
+src/data/collected_dataset.csv
+
+# Large versioned model artifact
+models/versioned_artifacts/xgboost_final.joblib

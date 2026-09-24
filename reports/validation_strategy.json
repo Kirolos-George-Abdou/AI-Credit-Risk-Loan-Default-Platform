@@ -1,0 +1,19 @@
+{
+  "cv_strategy": "StratifiedKFold",
+  "n_splits": 5,
+  "shuffle": true,
+  "random_state": 42,
+  "fold_default_rates": [
+    0.0807,
+    0.0807,
+    0.0807,
+    0.0807,
+    0.0807
+  ],
+  "imbalance_strategy": "class_weight='balanced' (start here); resampling deferred, CV-only if needed",
+  "class_weight_dict": {
+    "0": 0.5439092983356032,
+    "1": 6.193554884189325
+  },
+  "scale_pos_weight": 11.38710976837865
+}

@@ -1,0 +1,4 @@
+{
+  "LogisticRegression": "isotonic",
+  "XGBoost": "isotonic"
+}

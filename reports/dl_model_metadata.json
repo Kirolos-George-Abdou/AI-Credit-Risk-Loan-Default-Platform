@@ -1,0 +1,72 @@
+{
+  "model_name": "MLP",
+  "architecture": "mlp_wide",
+  "framework": "tensorflow-keras 2.21.0",
+  "created_utc": "2026-09-15T17:38:11.239742+00:00",
+  "random_state": 42,
+  "input_dim": 716,
+  "n_parameters": 432897,
+  "n_features_raw": 586,
+  "split_design": {
+    "sub_train_rows": 172205,
+    "val_rows": 36901,
+    "cal_rows": 36902,
+    "test_rows": 61503,
+    "final_training_data": "SUB-TRAIN",
+    "validation_purpose": "Early stopping and MLP configuration selection",
+    "calibration_threshold_data": "CAL",
+    "test_usage": "Final evaluation only"
+  },
+  "imbalance_strategy": "class_weight",
+  "class_weight": {
+    "0": 0.5439094647606173,
+    "1": 6.193533304560495
+  },
+  "calibration_method": "isotonic",
+  "decision_threshold": 0.09,
+  "cost_matrix": {
+    "FN_COST": 10,
+    "FP_COST": 1
+  },
+  "final_model_policy": {
+    "trained_on": "SUB-TRAIN",
+    "retrained_after_calibration": false,
+    "reason": "The selected MLP weights are frozen before calibration and threshold selection to keep the calibration and decision pipeline consistent."
+  },
+  "test_metrics": {
+    "threshold": 0.09,
+    "pr_auc": 0.24746964077787326,
+    "roc_auc": 0.7690940406824567,
+    "recall": 0.6644511581067473,
+    "precision": 0.18578588725573014,
+    "f1": 0.2903793680133791,
+    "brier_score": 0.06705644251971196,
+    "TN": 42080.0,
+    "FP": 14458.0,
+    "FN": 1666.0,
+    "TP": 3299.0,
+    "business_cost": 31118.0
+  },
+  "classical_champion": {
+    "model": "LogisticRegression",
+    "test_metrics": {
+      "threshold": 0.09,
+      "pr_auc": 0.2568558682500895,
+      "roc_auc": 0.7747427186456457,
+      "recall": 0.6731117824773414,
+      "precision": 0.18158109209453951,
+      "f1": 0.286007702182285,
+      "brier_score": 0.06680016520023578,
+      "TN": 41475.0,
+      "FP": 15063.0,
+      "FN": 1623.0,
+      "TP": 3342.0,
+      "business_cost": 31293.0
+    }
+  },
+  "artifacts": {
+    "model": "models/versioned_artifacts/best_mlp_model.keras",
+    "preprocessor": "models/versioned_artifacts/mlp_preprocessing_pipeline.joblib",
+    "calibrator": "models/versioned_artifacts/mlp_calibrator.joblib"
+  }
+}

@@ -1,0 +1,3 @@
+model,imbalance_strategy,cv_pr_auc_tuned
+XGBoost,smote,0.251416824606077
+LogisticRegression,class_weight,0.24748112401350694

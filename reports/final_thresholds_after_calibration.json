@@ -1,0 +1,12 @@
+{
+  "FN_COST": 10,
+  "FP_COST": 1,
+  "thresholds": {
+    "LogisticRegression": 0.09,
+    "XGBoost": 0.09
+  },
+  "calibration_methods": {
+    "LogisticRegression": "isotonic",
+    "XGBoost": "isotonic"
+  }
+}

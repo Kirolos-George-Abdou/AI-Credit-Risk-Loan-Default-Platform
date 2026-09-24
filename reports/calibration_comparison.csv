@@ -1,0 +1,7 @@
+model,method,brier_score
+LogisticRegression,isotonic,0.06732828802734207
+LogisticRegression,sigmoid,0.06743517558053475
+LogisticRegression,none,0.19358300529473832
+XGBoost,isotonic,0.0672856857919567
+XGBoost,none,0.06746238339768637
+XGBoost,sigmoid,0.06816153538472987

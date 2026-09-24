@@ -1,0 +1,66 @@
+{
+  "created_at_utc": "2026-09-14T16:52:14.232424+00:00",
+  "champion_model": "LogisticRegression",
+  "selection_metric": "PR-AUC",
+  "candidates": {
+    "LogisticRegression": {
+      "imbalance_strategy": "class_weight",
+      "calibration_method": "isotonic",
+      "decision_threshold": 0.09,
+      "best_hyperparameters": {
+        "C": 0.01,
+        "solver": "lbfgs",
+        "max_iter": 1000
+      },
+      "final_test_metrics": {
+        "roc_auc": 0.7747427186456457,
+        "pr_auc": 0.2568558682500895,
+        "recall": 0.6731117824773414,
+        "precision": 0.18158109209453951,
+        "f1": 0.286007702182285,
+        "brier_score": 0.06680016520023578,
+        "business_cost": 31293.0
+      },
+      "confusion_matrix": {
+        "TN": 41475,
+        "FP": 15063,
+        "FN": 1623,
+        "TP": 3342
+      },
+      "feature_count_before_encoding": 586,
+      "transformed_feature_count": 716,
+      "random_state": 42,
+      "artifact_path": "C:\\Users\\Kirolos George\\OneDrive - Alexandria University\\Desktop\\projects\\tech_trek_internship\\credit risk project structure Project\\project-name\\models\\versioned_artifacts\\logistic_regression_final.joblib"
+    },
+    "XGBoost": {
+      "imbalance_strategy": "smote",
+      "calibration_method": "isotonic",
+      "decision_threshold": 0.09,
+      "best_hyperparameters": {
+        "n_estimators": 200,
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "subsample": 0.85
+      },
+      "final_test_metrics": {
+        "roc_auc": 0.7715292394670293,
+        "pr_auc": 0.25440853583286566,
+        "recall": 0.6634441087613293,
+        "precision": 0.18404290982232652,
+        "f1": 0.28815116126492585,
+        "brier_score": 0.06692026136514123,
+        "business_cost": 31314.0
+      },
+      "confusion_matrix": {
+        "TN": 41934,
+        "FP": 14604,
+        "FN": 1671,
+        "TP": 3294
+      },
+      "feature_count_before_encoding": 586,
+      "transformed_feature_count": 716,
+      "random_state": 42,
+      "artifact_path": "C:\\Users\\Kirolos George\\OneDrive - Alexandria University\\Desktop\\projects\\tech_trek_internship\\credit risk project structure Project\\project-name\\models\\versioned_artifacts\\xgboost_final.joblib"
+    }
+  }
+}
